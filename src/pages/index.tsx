@@ -1,5 +1,6 @@
 import styles from './index.less';
-import { ReactFormInputTable } from 'react-form-input-table';
+import { Button } from 'antd';
+import ReactFormInputTable from 'react-form-input-table';
 
 export default function IndexPage() {
   const COLUMNS = [
@@ -67,9 +68,9 @@ export default function IndexPage() {
   return (
     <div>
       <h1 className={styles.title}>Page index</h1>
-      <ReactFormInputTable.d
-        columns={COLUMNS_RELATED_WORD}
-        dataSource={searchRelatedWordData}
+      <ReactFormInputTable
+        columns={COLUMNS}
+        dataSource={dataSource}
         onSave={(values) => {
           save(values);
         }}
