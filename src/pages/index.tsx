@@ -71,9 +71,7 @@ export default function IndexPage() {
       <ReactFormInputTable
         columns={COLUMNS}
         dataSource={dataSource}
-        onSave={(values) => {
-          save(values);
-        }}
+        onSave={}
       />
     </div>
   );
