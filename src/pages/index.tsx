@@ -63,6 +63,12 @@ export default function IndexPage() {
       switch: true,
       select: 2,
     },
+     {
+      id: 2,
+      title: '测试2',
+      switch: true,
+      select: 2,
+    },
   ];
   const save = (values) => {};
   return (
